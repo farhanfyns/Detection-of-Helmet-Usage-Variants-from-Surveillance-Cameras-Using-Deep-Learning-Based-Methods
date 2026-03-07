@@ -1,6 +1,6 @@
 # Detection of Helmet Usage Variants from Surveillance Cameras Using Deep Learning Based Methods
 
-Bachelor's Thesis — Informatics, Telkom University (2025)
+Bachelor's Thesis — Informatics, Telkom University (2025)  
 Published on Telkom University Open Library
 
 Made by Farhan Faturahman
@@ -33,7 +33,7 @@ Dataset split:
 - Validation: 15% (168 frames)
 - Testing: 15% (167 frames)
 
-Dataset available on Roboflow: [https://universe.roboflow.com/dataset-ta-hroly/4-class-helmet-detection-dataset]
+Dataset available on Roboflow: [4 Class Helmet Detection Dataset](https://universe.roboflow.com/dataset-ta-hroly/4-class-helmet-detection-dataset)
 
 ---
 
@@ -64,10 +64,45 @@ Best configuration: **100 epochs, batch size 32**
 
 ## Requirements
 
-[Fill in once you check your code files]
+- Python 3.8+
+- ultralytics
+- pandas
+
+Install dependencies:
+```bash
+pip install ultralytics pandas
+```
+
+---
+
+## Requirements
+
+- Python 3.8+
+- ultralytics
+- pandas
+
+Install dependencies:
+```bash
+pip install ultralytics pandas
+```
 
 ---
 
 ## How to Run
 
-[Fill in based on your actual code]
+1. Clone this repository and place your dataset folder containing `data.yaml` in the project directory
+2. Update `base_path` to match your local directory:
+```python
+base_path = r"your\local\path\to\project"
+```
+3. Open the notebook for your desired scenario (e.g. `Epoch_100_Batch_32`) and run all cells to start training
+4. After training, update `model_path` to point to the best weights generated from training:
+```python
+model_path = r"your\local\path\to\Epoch 100\Batch 32\train\weights\best.pt"
+```
+5. Run the evaluation cells to test the model on the test set and generate confusion matrix, F1 curve, and results CSV
+
+Training results and model weights will be saved automatically to the specified `save_dir`.
+
+**Inference on video:**
+Update `model_path` and `video_path` in `Model_Inference` notebook and run all cells. Results will be saved automatically to an `inference_results` folder in the same directory as the video.
