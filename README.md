@@ -60,6 +60,8 @@ Best configuration: **100 epochs, batch size 32**
 | Validation | 0.953 | 0.952 | 0.953 | 0.984 | 0.819 |
 | Testing | 0.955 | 0.960 | 0.958 | 0.985 | 0.802 |
 
+Full training results for all scenarios including weights, confusion matrices, F1 curves, and CSVs are available in the `Hasil Pengujian Epoch/` folder.
+
 ---
 
 ## Requirements
