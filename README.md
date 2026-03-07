@@ -75,19 +75,6 @@ pip install ultralytics pandas
 
 ---
 
-## Requirements
-
-- Python 3.8+
-- ultralytics
-- pandas
-
-Install dependencies:
-```bash
-pip install ultralytics pandas
-```
-
----
-
 ## How to Run
 
 1. Clone this repository and place your dataset folder containing `data.yaml` in the project directory
