@@ -1,7 +1,9 @@
 # Detection of Helmet Usage Variants from Surveillance Cameras Using Deep Learning Based Methods
 
-Bachelor's Thesis — Informatics, Telkom University (2025)  
+Bachelor's Thesis — Informatics, Telkom University (2025)
 Published on Telkom University Open Library
+
+Made by Farhan Faturahman
 
 ---
 
@@ -31,7 +33,7 @@ Dataset split:
 - Validation: 15% (168 frames)
 - Testing: 15% (167 frames)
 
-Dataset available on Roboflow: [insert link]
+Dataset available on Roboflow: [https://universe.roboflow.com/dataset-ta-hroly/4-class-helmet-detection-dataset]
 
 ---
 
@@ -53,13 +55,10 @@ Training configuration:
 
 Best configuration: **100 epochs, batch size 32**
 
-| Metric | Validation | Testing |
-|---|---|---|
-| mAP@50 | 0.984 | 0.985 |
-| mAP@50-95 | 0.819 | 0.802 |
-| Precision | 0.953 | 0.955 |
-| Recall | 0.952 | 0.960 |
-| F1-Score | 0.953 | 0.958 |
+| | Precision | Recall | F1-Score | mAP@50 | mAP@50-95 |
+|---|---|---|---|---|---|
+| Validation | 0.953 | 0.952 | 0.953 | 0.984 | 0.819 |
+| Testing | 0.955 | 0.960 | 0.958 | 0.985 | 0.802 |
 
 ---
 
